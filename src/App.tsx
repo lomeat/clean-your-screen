@@ -11,7 +11,7 @@ export function App() {
   return <ColorBlock isWhite={isWhite} onClick={toggleColor} />;
 }
 
-const ColorBlock = styled.div<{ theme: any; isWhite: boolean }>`
+const ColorBlock = styled.div<{ theme: Theme; isWhite: boolean }>`
   width: 100vw;
   height: 100vh;
 

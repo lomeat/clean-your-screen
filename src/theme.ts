@@ -7,7 +7,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export const theme = {
+export const theme: Theme = {
   white: "#fff",
   black: "#000",
 };
