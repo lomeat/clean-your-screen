@@ -6,9 +6,16 @@ export function App() {
 
   function toggleColor() {
     setIsWhite((state) => !state);
+    document.body.requestFullscreen();
   }
 
-  return <ColorBlock isWhite={isWhite} onClick={toggleColor} />;
+  return (
+    <ColorBlock
+      title="Click to toggle white/black"
+      isWhite={isWhite}
+      onClick={toggleColor}
+    />
+  );
 }
 
 const ColorBlock = styled.div<{ theme: Theme; isWhite: boolean }>`
