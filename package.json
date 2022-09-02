@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "watch": "tsc && vite build && serve -s build",
     "preview": "vite preview"
   },
   "dependencies": {
