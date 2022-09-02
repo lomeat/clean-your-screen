@@ -4,10 +4,10 @@
 set -e
 
 # build
-npm run build
+yarn run build
 
 # navigate into the build output directory
-cd dist
+cd build
 
 # if you are deploying to a custom domain
 # echo 'www.example.com' > CNAME
@@ -21,6 +21,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:lomeat/clean-your-screen.git master:gh-pages
+git push -f git@github.com:lomeat/clean-your-screen.git main:gh-pages
 
 cd -
