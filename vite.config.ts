@@ -5,6 +5,8 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
 
+  base: "/clean-your-screen/",
+
   build: {
     outDir: "build",
   },
